@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 9b</title>
+	<style type="text/css">
+.back {
+	position: fixed;
+	top: 200px;
+}
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: black;
+    color: white;
+}
+	</style>
+</head>
+<body>
+	<h1>Pilih Link</h1>
+	<form>
+		<select name="myLink" id="myLink" onchange="pilihLink()">
+			<option value="#">Pilih Link</option>
+			<option value="http://google.com">Google.com</option>
+			<option value="http://teknik.unpas.ac.id">Website Teknik Unpas</option>
+			<option value="http://facebook.com/zikri.ZzZ">Facebook Saya</option>
+		</select>
+	</form>
+
+
+	<div class="back"><a href="../index173040027.html">Back to Index !</a></div>
+
+
+	<script type="text/javascript">
+		function pilihLink() {
+			var linkTerpilih = document.getElementById('myLink').value;
+			document.location.href = linkTerpilih;
+			link = document.forms[0].myLink.value;
+			alert("Kamu akan memasuki web " + link);
+
+		}
+	</script>
+
+</body>
+</html>
